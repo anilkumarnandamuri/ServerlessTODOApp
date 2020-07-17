@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "name",
+        "dueDate",
+        "done"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "name": {
+            "id": "#/properties/name",
+            "type": "string",
+            "title": "schema of name",
+            "description": "This represents the name of the task"
+        },
+        "dueDate": {
+            "id": "#/properties/dueDate",
+            "type": "string",
+            "title": "schema of dueDate",
+            "description": "This represents the deadline for the task"
+        },
+        "done": {
+            "id": "#/properties/done",
+            "type": "boolean",
+            "title": "Schema of completion",
+            "description": "Represents whether the task is completed"
+        }
+    }
+}
