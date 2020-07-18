@@ -27,5 +27,5 @@
             "description": "Represents whether the task is completed"
         }
     },
-    "additionalProperties": false
+    "additionalProperties": true
 }
