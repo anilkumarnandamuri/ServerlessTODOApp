@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "type": "object",
+    "title": "Update TODO schema",
+    "required": [
+        "name",
+        "dueDate",
+        "done"
+    ],
+    "properties": {
+        "name": {
+            "id": "#/properties/name",
+            "type": "string",
+            "title": "schema of name",
+            "description": "This represents the name of the task"
+        },
+        "dueDate": {
+            "id": "#/properties/dueDate",
+            "type": "string",
+            "title": "schema of dueDate",
+            "description": "This represents the deadline for the task"
+        },
+        "done": {
+            "id": "#/properties/done",
+            "type": "boolean",
+            "title": "Schema of completion",
+            "description": "Represents whether the task is completed"
+        }
+    },
+    "additionalProperties": true
+}

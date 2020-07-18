@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "type": "object",
+    "title": "TODO Schema",
+    "required": [
+        "name",
+        "dueDate"
+    ],
+    "properties": {
+        "name": {
+            "id": "#/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "dueDate": {
+            "id": "#/properties/dueDate",
+            "type": "string",
+            "title": "The dueDate schema",
+            "description": "An explanation about the purpose of this instance."
+        }
+    },
+    "additionalProperties": true
+}
