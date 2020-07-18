@@ -20,7 +20,7 @@ provider:
     TODOS_TABLE: Todos-${self:provider.stage}
     INDEX_NAME: Todos-UserID-${self:provider.stage}
     IMAGES_S3_BUCKET: todos-imagebucket-${self:provider.stage}
-    SIGNED_URL_EXPIRATION: 300
+    SIGNED_URL_EXPIRATION: 3000
     AUTH_0_SECRET_ID: Auth0Secret-${self:provider.stage}
     AUTH_0_SECRET_FIELD: auth0Secrets
 

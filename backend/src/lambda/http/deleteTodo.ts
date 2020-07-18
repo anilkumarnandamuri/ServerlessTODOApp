@@ -1,6 +1,6 @@
 import 'source-map-support/register'
 import { createLogger } from '../../utils/logger'
-import {deleteTodo} from '../../businesslogic/todos'
+import { deleteTodo } from '../../businesslogic/todos'
 import { APIGatewayProxyEvent, APIGatewayProxyResult, APIGatewayProxyHandler } from 'aws-lambda'
 
 export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
@@ -21,6 +21,7 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
           'Access-Control-Allow-Credentials': true
         },
         body: JSON.stringify({
+          deletedTodo: todoId
         })
       }
   }catch(e){
