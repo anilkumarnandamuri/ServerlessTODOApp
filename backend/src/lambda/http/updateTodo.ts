@@ -14,7 +14,7 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
   const jwtToken = split[1]
   try{
     logger.info('The following todo is being updated, todoId:', todoId)
-    await updateTodo(jwtToken,todoId,updatedTodo);
+    const updatedItem = await updateTodo(jwtToken,todoId,updatedTodo);
     return {
         statusCode: 201,
         headers: {
@@ -22,6 +22,7 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
           'Access-Control-Allow-Credentials': true
         },
         body: JSON.stringify({
+          updatedItem
         })
       }
   }catch(e){
